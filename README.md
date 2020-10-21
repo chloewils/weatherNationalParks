@@ -1,1 +1,1 @@
-# weatherNationalParks
+This application will allow the user to identify national parks within a specified area.  The user will be able to get the park hours, the park fees, and if the park is pet friendly.  Additionally, they will get a weather forecast for the days they specified.
