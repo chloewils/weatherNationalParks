@@ -27,25 +27,30 @@ img {
     margin-left: 100px;
     border: solid;
     align-items: stretch;
+    background-color: #4a5a49;
 }
 
 #logo {
     border: solid;
+    background-color: #4a5a49;
 }
 
 #campsite {
     margin-left: 100px;
     margin-right: 100px;
     border: solid;
+    background-color: #4a5a49;
 }
 
 #prep {
     margin-left: 100px;
     margin-right: 150px;
     border: solid;
+    background-color: #4a5a49;
+    
 }
 
-#team {
+#gallery {
     border-style: solid;
     margin-right: 10px;
     margin-left: 10px;
@@ -55,12 +60,6 @@ img {
 #cubs {
     border-style: solid;
     padding: 20px;
-    margin-right: 10px;
-}
-
-#gallery {
-    border-style: solid;
-    padding: 20px;
 }
 
 #copyright {
@@ -68,3 +67,11 @@ img {
     text-align: justify;
     vertical-align: middle;
 }
+
+body {
+    background-image: url("assets/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
