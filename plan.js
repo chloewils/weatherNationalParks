@@ -16,6 +16,10 @@ var nationalParkApi = function(apiEndPoint) {
     })
 }
 
+onDocument.ready() {
+    var parks = nationalParkApi("/parks");
+
+}
 
 
 // api:Y0GGEH0NGqggHl4Eyf678f5geglMnqBzFvfV31k7
