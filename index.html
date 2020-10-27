@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 
     <title>National Parks Outdoor Camping Assistant</title>
 
@@ -37,74 +37,91 @@
   </div>
 </nav>
 <!-- End Nav bar -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">National Parks Outdoor Camping Assistant</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-      </div>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">National Parks Outdoor Camping Assistant</h1>
+        <p class="lead">Viking ocean longship scandinavia axes ocean loot, tall blond women horns boats Leif Erikson boats berserker sea. Beowulf Beowulf the kracken skald bork bork bork, Leif Erikson tall blond women berserker ikea raiding the kracken. The kracken ocean axes axes sailing axes skald the kracken berserker.</p>
     </div>
+  </div>
 </head>
   
   <body>
 <!-- Start Plan Your Trip Card-->
-<div class="container-fluid">
-    <div class= "row" id="row-1">
-      <div class= "column" id="plan">
-        <div class="card-body">
-        <h5 class="card-title">Plan Your Trip</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="plan.html" class="btn btn-primary">Plan your Trip</a>
-      </div>
-    </div>
-    <div class= "column">
-      <div class="card-body">
-       <img src="assets/sss images/NPLogo.jpg" alt="National Parks Logo" style="width: 100px;" id= "logo">
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Prep List Row -->
-<div class="container-fluid">
-  <div class= "row" id="row-2">
-    <div class= "column" id="plan">
-      <div class= "column">
-        <div class="card-body">
-         <img src="assets/cailincampsite.png" alt="Campsite" style="width: 100px;" id= "campsite">
+  <div class="container-fluid"  id="row-1">
+    <div class= "row">
+      <div class= "column-sm">
+        <div class="card-body" id="trip">
+          <h5 class="card-title">Plan Your Trip</h5>
+          <p class="card-text">Clisk here to find information about yor destination</p>
+          <a href="plan.html" class="btn btn-primary">Plan your Trip</a>
         </div>
       </div>
     
-      <div class="card-body">
+      <div class= "column-sm">
+        <div class="card-body">
+          <img src="assets/sss images/NPLogo.jpg" alt="National Parks Logo" id= "logo">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Prep List Row -->
+  <div class="container-fluid" id="row-2">
+    <div class= "row">
+      <div class= "column-xl" id="campsite">
+        <div class="card-body">
+          <img src="assets/cailincampsite.png" alt="My Campsite" id="campsite">
+        </div>
+      </div>
+      
+      <div class= "column-sm"></div>
+      <div class="card-body" id="prep">
         <h5 class="card-title">Prep Lists</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text">Look here for seasonal prep lists</p>
         <a href="#" class="btn btn-primary">Prep Lists</a>
       </div>
+    </div>
   </div>
-</div>
 
 <!-- Gallery Row -->
-<div class="container-fluid">
-  <div class= "row" id="row-3">
-    <div class= "column" id="plan">
-      <div class="card-body">
-      <h5 class="card-title">Team Links</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Plan your Trip</a>
-    </div>
-  </div>
-  <div class= "column">
-    <div class="card-body">
-     <img src="assets/sss images/NPLogo.jpg" alt="National Parks Logo" style="width: 100px;" id= "logo">
+  <div class="container-fluid" id="row-3">
+    <div class= "row">
+      <div class= "column-sm" id="team">
+        <div class="card-body">
+          <h5 class="card-title">Team Links</h5>
+          <p class="card-text">See our favorite National Park Campgrounds</p>
+          <a href="#" class="btn btn-primary">Plan your Trip</a>
+        </div>
+      </div>
+
+      <div class= "column-sm" id="cubs">
+        <div class="card-body">  
+          <img src="assets/cubs 1.jpg" alt="Cougar Cubs" id="cubs">
+        </div>
+      </div>
+
+      <div class= "column-sm" id="gallery">
+        <div class="card-body">
+          <h5 class="card-title">Gallery</h5>
+          <p class="card-text">Look here for the US top 10 National Forest Camping Grounds</p>
+            <a href="#" class="btn btn-primary">See Our Galleries</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-</div>
-
-
     
+<div class="col-12 col-lg-10 offset-lg-1 col-xl-5 offset-xl-0 text-center text-xl-left order-3 order-xl-2" id="footer">
+  <div id="copyright">
+      ©2020 Team Code n' Coffee<br>
+  </div>
+</div>
+
+
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
+<script src="../team project/styles/script.js"></script>
     
 </body>
 </html>

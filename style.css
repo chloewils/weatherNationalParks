@@ -1,4 +1,70 @@
+img {
+    width: 200px;
+}
+
+#row-1 {
+    border-style: solid;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+#row-2 {
+    border-style: solid;
+    padding: 20px;
+}
+
+#row-3 {
+    border-style: solid;
+    padding: 20px;
+}
+
+#row-3 {
+    border-style: solid;
+}
+
+#trip {
+    margin-right: 300px;
+    margin-left: 100px;
+    border: solid;
+    align-items: stretch;
+}
+
 #logo {
-    position: absolute;
-    right: 0;
+    border: solid;
+}
+
+#campsite {
+    margin-left: 100px;
+    margin-right: 100px;
+    border: solid;
+}
+
+#prep {
+    margin-left: 100px;
+    margin-right: 150px;
+    border: solid;
+}
+
+#team {
+    border-style: solid;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+#cubs {
+    border-style: solid;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+#gallery {
+    border-style: solid;
+    padding: 20px;
+}
+
+#copyright {
+    height: 75px;
+    text-align: justify;
+    vertical-align: middle;
 }
