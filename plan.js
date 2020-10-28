@@ -1,10 +1,10 @@
-// var nationalParkUrl = "developer.nps.gov/api/v1/parks?";
+var nationalParkUrl = "developer.nps.gov/api/v1/parks?";
 // ajax national park callback
-// var nationalParkUrl = "developer.nps.gov/api/v1" + searchTerm;
-// var searchTerm = $("#search-value").val();
-//     $("#search-value").val("");
-//     NationalPark(searchTerm);
-//     NationalPark(searchTerm);
+var nationalParkUrl = "developer.nps.gov/api/v1" + searchTerm;
+var searchTerm = $("#search-value").val();
+    $("#search-value").val("");
+    NationalPark(searchTerm);
+    NationalPark(searchTerm);
 
 var nationalParkApi = function() {  
     $.ajax({
