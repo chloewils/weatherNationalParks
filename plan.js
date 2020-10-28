@@ -1,20 +1,17 @@
-<<<<<<< HEAD
-=======
-var nationalParkUrl = "developer.nps.gov/api/v1/parks?";
->>>>>>> d5ade2f0c458b834d073e50d5fccf4c8d171e58c
+// var nationalParkUrl = "developer.nps.gov/api/v1/parks?";
 // ajax national park callback
-var nationalParkUrl = "developer.nps.gov/api/v1" + searchTerm;
-var searchTerm = $("#search-value").val();
-    $("#search-value").val("");
-    NationalPark(searchTerm);
-    NationalPark(searchTerm);
+// var nationalParkUrl = "developer.nps.gov/api/v1" + searchTerm;
+// var searchTerm = $("#search-value").val();
+//     $("#search-value").val("");
+//     NationalPark(searchTerm);
+//     NationalPark(searchTerm);
 
 var nationalParkApi = function(apiEndPoint) {  
     $.ajax({
         type: "GET",
-        url: nationalParkUrl + apiEndPoint, 
-        headers: {
-            api_key:"Y0GGEH0NGqggHl4Eyf678f5geglMnqBzFvfV31k7"
+        url: "https://developer.nps.gov/api/v1/parks?" + searchTerm + "&api_key=Y0GGEH0NGqggHl4Eyf678f5geglMnqBzFvfV31k7"
+        // headers: {
+        //     api_key:"Y0GGEH0NGqggHl4Eyf678f5geglMnqBzFvfV31k7"
         },
         success: function (result) {
             alert (result.data)
