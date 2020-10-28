@@ -1,5 +1,10 @@
-var nationalParkUrl = "developer.nps.gov/api/v1";
 // ajax national park callback
+var nationalParkUrl = "developer.nps.gov/api/v1" + searchTerm;
+var searchTerm = $("#search-value").val();
+    $("#search-value").val("");
+    NationalPark(searchTerm);
+    NationalPark(searchTerm);
+
 var nationalParkApi = function(apiEndPoint) {  
     $.ajax({
         type: "GET",
@@ -26,3 +31,4 @@ onDocument.ready() {
 
 // web service request: https://developer.nps.gov/api/v1/parks?parkCode=acad&api_key=Y0GGEH0NGqggHl4Eyf678f5geglMnqBzFvfV31k7
 
+// create an environmental variables (Heroku)
