@@ -35,6 +35,7 @@ img {
     border: solid;
     background-color: #4a5a49;
     border-color: ivory;
+    padding: 10px;
 }
 
 #campsite {
@@ -59,12 +60,14 @@ img {
     margin-right: 10px;
     margin-left: 10px;
     padding: 20px;
+    background-color: #4a5a49;
     border-color: ivory;
 }
 
 #cubs {
-    border-style: hidden;
+    border-style: solid;
     padding: 20px;
+    background-color: #4a5a49;
     border-color: ivory;
 }
 
