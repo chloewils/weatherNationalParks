@@ -1,4 +1,4 @@
-var nationalParkUrl = "developer.nps.gov/api/v1";
+var nationalParkUrl = "developer.nps.gov/api/v1/parks?";
 // ajax national park callback
 var nationalParkApi = function(apiEndPoint) {  
     $.ajax({
@@ -16,13 +16,10 @@ var nationalParkApi = function(apiEndPoint) {
     })
 }
 
-onDocument.ready() {
-    var parks = nationalParkApi("/parks");
-
-}
+// 
 
 
 // api:Y0GGEH0NGqggHl4Eyf678f5geglMnqBzFvfV31k7
 
-// web service request: https://developer.nps.gov/api/v1/parks?parkCode=acad&api_key=Y0GGEH0NGqggHl4Eyf678f5geglMnqBzFvfV31k7
+// web service request: https://developer.nps.gov/api/v1/parks?&api_key=Y0GGEH0NGqggHl4Eyf678f5geglMnqBzFvfV31k7
 
