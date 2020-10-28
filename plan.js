@@ -6,21 +6,22 @@
 //     NationalPark(searchTerm);
 //     NationalPark(searchTerm);
 
-var nationalParkApi = function(apiEndPoint) {  
+var nationalParkApi = function() {  
     $.ajax({
-        type: "GET",
-        url: "https://developer.nps.gov/api/v1/parks?" + searchTerm + "&api_key=Y0GGEH0NGqggHl4Eyf678f5geglMnqBzFvfV31k7"
-        // headers: {
-        //     api_key:"Y0GGEH0NGqggHl4Eyf678f5geglMnqBzFvfV31k7"
-        },
-        success: function (result) {
-            alert (result.data)
-        },
-            error: function (error) {
+        url: "https://developer.nps.gov/api/v1/parks?" + searchTerm + "&api_key=Y0GGEH0NGqggHl4Eyf678f5geglMnqBzFvfV31k7",
+        method: "GET",
+        })
+
+        .then(function (response) {
             console.log (error);
-        }
-    })
-}
+          });
+        // success: function (result) {
+        //     alert (result.data)
+        // },
+        //     error: function (error) {
+           
+        // }
+    }
 
 // 
 
