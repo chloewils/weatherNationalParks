@@ -8,7 +8,7 @@
 
 var nationalParkApi = function() {  
     $.ajax({
-        url: "https://developer.nps.gov/api/v1/parks?" + searchTerm + "&api_key=Y0GGEH0NGqggHl4Eyf678f5geglMnqBzFvfV31k7",
+        url: "https://developer.nps.gov/api/v1/parks?" + california + "&api_key=Y0GGEH0NGqggHl4Eyf678f5geglMnqBzFvfV31k7",
         method: "GET",
         })
 
