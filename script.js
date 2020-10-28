@@ -24,7 +24,7 @@ $('.printMe').click(function(){
                 weatherForecast(searchTerm);
             }
     });
-       
+
         // Search Storage and history row
         var history = JSON.parse(localStorage.getItem("history")) || [];
 
