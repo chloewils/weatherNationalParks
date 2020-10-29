@@ -1,0 +1,25 @@
+
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} 
+
+.row {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+.card {
+    margin-right: 75px;
+    background-color:#4a5a49;;
+}
+
+h5 {
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+}
