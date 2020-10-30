@@ -36,7 +36,7 @@ $(document).$(function () {
         document.getElementById("list").addEventListener("click",listQ);
     }
 
-});
+    
 
             function nationalParkFunction(searchTerm) {
 
@@ -63,7 +63,7 @@ $(document).$(function () {
                             console.log(data);
                             $("#states").html("<h4 class=\"mt-3\">Local parks:</h4>").append("<div class=\"row\">");
                 
-
+});
 // api:DSwWcrFQxBpoiqq12vYeLPVcimOUMrdngmDgePeT
 
 // web service request: https://developer.nps.gov/api/v1/parks?q=Seattle&api_key=DSwWcrFQxBpoiqq12vYeLPVcimOUMrdngmDgePeT&stateCode=WA&limit=5
