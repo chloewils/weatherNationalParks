@@ -6,40 +6,34 @@ $(document).$(function () {
     $("#search-button").val("");
     NationalParkFunction(searchTerm);
 
-    / keyboard 'enter' button event
-    $("#search-button").keypress(function (event) {
-        var keycode = (event.keyCode ? event.keyCode : event.which);
-        if (keycode === 13) {
-            NationalParkFunction(searchTerm);
+// Search Storage and history row
+    var history = JSON.parse(localStorage.getItem("history")) || [];
 
-            // Search Storage and history row
-            var history = JSON.parse(localStorage.getItem("history")) || [];
-
-            if (history.length == < 5) {
-                NationalParkFunction(history[history.length - 1]);
-            }
-
-            for (var i = 0; i < history.length; i++) {
-                createRow(history[i]);
-            }
-
-            function createRow(text) {
-                var listItem = $("<li>").addClass("list-group-item").text(text);
-                $(".history").append(listItem);
-            }
-            // list item click functionality listener
-            function listener(){
-                var e = document.getElementById("#states");
-                if(e.selectedIndex > 0){
-                 if("Blank Test" === e.selectedIndex){ alert("yo"); }
-                }
-               }searchTerm= e.selectedIndex;
-            }
-            else {
-                searchTerm = "";
-            }
-         }
+    if (history.length == < 5) {
+        NationalParkFunction(history[history.length - 1]);
     }
+
+    for (var i = 0; i < history.length; i++) {
+        createRow(history[i]);
+    }
+
+    function createRow(text) {
+        var listItem = $("<li>").addClass("list-group-item").text(text);
+        $(".history").append(listItem);
+    }
+    // list item click functionality listener
+    function listener(){
+        var e = document.getElementById("#states");
+        if(e.selectedIndex > 0){
+            if("Blank Test" === e.selectedIndex){ alert("yo"); }
+        }
+        }searchTerm= e.selectedIndex;
+    }
+    else {
+        searchTerm = "";
+    }
+    }
+}
 
             });
 
