@@ -28,8 +28,18 @@ $(document).$(function () {
                 $(".history").append(listItem);
             }
             // list item click functionality listener
-            $(".history").on("click", "li", function () {
-                NationalParkFunction($(this).text());
+            function listener(){
+                var e = document.getElementById("#states");
+                if(e.selectedIndex > 0){
+                 if("Blank Test" === e.selectedIndex){ alert("yo"); }
+                }
+               }searchTerm= e.selectedIndex;
+            }
+            else {
+                searchTerm = "";
+            }
+         }
+    }
 
             });
 
@@ -54,7 +64,10 @@ $(document).$(function () {
 
 
 
-
+                        then(function (data) {
+                            console.log(data);
+                            $("#states").html("<h4 class=\"mt-3\">Local parks:</h4>").append("<div class=\"row\">");
+                
 
 // api:DSwWcrFQxBpoiqq12vYeLPVcimOUMrdngmDgePeT
 
