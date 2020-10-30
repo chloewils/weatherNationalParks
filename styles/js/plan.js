@@ -9,7 +9,7 @@ $(document).$(function () {
 // Search Storage and history row
     var history = JSON.parse(localStorage.getItem("history")) || [];
 
-    if (history.length == < 5) {
+    if (history.length < 0) {
         NationalParkFunction(history[history.length - 1]);
     }
 
@@ -22,26 +22,27 @@ $(document).$(function () {
         $(".history").append(listItem);
     }
     // list item click functionality listener
-    function listener(){
+    function listQ(){
         var e = document.getElementById("#states");
         if(e.selectedIndex > 0){
             if("Blank Test" === e.selectedIndex){ alert("yo"); }
         }
-        }searchTerm= e.selectedIndex;
-    }
-    else {
-        searchTerm = "";
-    }
-    }
-}
 
-            });
+        }searchTerm = e.selectedIndex;
+    })
+        else {
+        lastIndex = "";
+
+        document.getElementById("list").addEventListener("click",listQ);
+    }
+
+});
 
             function nationalParkFunction(searchTerm) {
 
                 var nationalParkApi = function () {
                     $.ajax({
-                        url: "https://developer.nps.gov/api/v1/parks?" + searchTerm + "api_key=DSwWcrFQxBpoiqq12vYeLPVcimOUMrdngmDgePeT"
+                        url: "https://developer.nps.gov/api/v1/parks?" + searchTerm + "api_key=DSwWcrFQxBpoiqq12vYeLPVcimOUMrdngmDgePeT",
                         method: "GET",
                     }).then(function (response) {
                         if (history.indexOf(searchTerm) === -1) {
