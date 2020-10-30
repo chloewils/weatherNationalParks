@@ -37,7 +37,7 @@ $(document).$(function () {
 
                 var nationalParkApi = function () {
                     $.ajax({
-                        url: "https://developer.nps.gov/api/v1/parks?q=Seattle&api_key=DSwWcrFQxBpoiqq12vYeLPVcimOUMrdngmDgePeT&stateCode=WA&limit=5" + searchTerm + "&api_key=DSwWcrFQxBpoiqq12vYeLPVcimOUMrdngmDgePeT",
+                        url: "https://developer.nps.gov/api/v1/parks?" + searchTerm + "api_key=DSwWcrFQxBpoiqq12vYeLPVcimOUMrdngmDgePeT"
                         method: "GET",
                     }).then(function (response) {
                         if (history.indexOf(searchTerm) === -1) {
