@@ -1,12 +1,12 @@
 $(document).ready(function () {
 
-    // ajax national park callback
+// national park callback
     var nationalParkUrl = "https://developer.nps.gov/api/v1/parks?q=Seattle&api_key=DSwWcrFQxBpoiqq12vYeLPVcimOUMrdngmDgePeT&stateCode=WA&limit=5";
     var searchTerm = $("#search-button").val();
     $("#search-button").val("");
     NationalParkFunction(searchTerm);
 
-    // Search Storage and history row
+// search storage and history row
     var history = JSON.parse(localStorage.getItem("history")) || [];
 
     if (history.length < 0) {
@@ -25,23 +25,6 @@ function createRow(text) {
 }
 // list item click functionality listener
 
-/*
-function listQ() {
-    var e = $("#states");
-    if (e.selectedIndex > 0) {
-        if ("Blank Test" === e.selectedIndex) { alert("yo"); }
-    }
-        else {
-        lastIndex = "";
-
-        document.getElementById("states").addEventListener("click", listQ);
-    }
-    searchTerm = e.selectedIndex;
-
-
-}
-*/
-
 $('#states').change(function () {
     let selectedState = $("#states option:selected").val()
     console.log(selectedState)
@@ -58,12 +41,8 @@ function nationalParkFunction(searchTerm) {
 
         console.log('res', response)
 
-        /*
-        
-        }
-        */
 
-        // add the cards and then add the parks
+// add the cards and then add the parks
         for(var i = 0; i < response.data.length; i++) {
 
             console.log(response.data[i])
@@ -72,40 +51,13 @@ function nationalParkFunction(searchTerm) {
             var parkName = currentPark.fullName
             var url = currentPark.url
 
-
-            
-            
-
-           //$("<h3>").addClass("card-title").text(parkName + " (" + new Date().toLocaleDateString() + ")");
-            
            $("body").append("<div><a href='" + url + "'>" + parkName + "</a></div>")
 
-            /*
-
-            var lon = data.coord.lon;
-            var lat = data.coord.lat;
-
-            */
-
         }
-
-
-/*
-        then(function (data) {
-            console.log(data);
-            $("#states").html("<h4 class=\"mt-3\">Local parks:</h4>").append("<div class=\"row\">");
-
-        });
-
-        */
 
     }, function(err) {
         console.log("Error", err)
     })
-
 }
-// api:DSwWcrFQxBpoiqq12vYeLPVcimOUMrdngmDgePeT
 
-// web service request: https://developer.nps.gov/api/v1/parks?q=Seattle&api_key=DSwWcrFQxBpoiqq12vYeLPVcimOUMrdngmDgePeT&stateCode=WA&limit=5
-
-// create an environmental variables (Heroku)
+// Weather Data
