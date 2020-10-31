@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 // national park callback
     var nationalParkUrl = "https://developer.nps.gov/api/v1/parks?q=Seattle&api_key=DSwWcrFQxBpoiqq12vYeLPVcimOUMrdngmDgePeT&stateCode=WA&limit=5";
-    var searchTerm = $("#search-button").val();
+    var searchTerm = $("#search-button" ).val();
     $("#search-button").val("");
     NationalParkFunction(searchTerm);
 
@@ -61,3 +61,23 @@ function nationalParkFunction(searchTerm) {
 }
 
 // Weather Data
+var button = document.querySelector('.button')
+var inputvalue = document.querySelector('.inputValue')
+var name = document.querySelector('.name');
+var desc = document.querySelector('.desc');
+var temp = document.querySelector('.temp');
+
+button.addEventListener('click', function (){
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + input.value + '&appid=987c73bd1a5fdefe46a4172c1fe33bcf' + '&units=imperial')
+    .then(response => response.json())
+    .then(data => {
+        var nameValue = data['name'];
+        var tempValue = data['main']['temp'];
+        var descValue = data['weather'][0]['description'];
+
+        name.innerHtml = nameValue;
+        temp.innerHTML = tempValue;
+        desc.innerHTML = descValue;
+    })
+.catch(err => alert("Wrong Ciry Name!"))
+})
