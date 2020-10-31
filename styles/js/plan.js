@@ -61,7 +61,7 @@ function nationalParkFunction(searchTerm) {
 }
 
 // Weather Data
-var button = document.querySelector('.button')
+var button = document.querySelector('.submit')
 var inputvalue = document.querySelector('.inputValue')
 var name = document.querySelector('.name');
 var desc = document.querySelector('.desc');
