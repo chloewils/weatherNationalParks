@@ -17,9 +17,10 @@ body {
 
 footer {
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     text-align: center;
-    padding: 3px;
+    padding: 10px;
     background-color: DarkSalmon;
     color: white;
+    width: 100%;
 }
