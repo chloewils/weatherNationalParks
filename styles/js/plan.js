@@ -61,23 +61,24 @@ function nationalParkFunction(searchTerm) {
 }
 
 // Weather Data
-var button = document.querySelector('.submit')
-var inputvalue = document.querySelector('.inputValue')
+var button = document.querySelector('.button')
+var inputValue = document.querySelector('.inputValue')
 var name = document.querySelector('.name');
 var desc = document.querySelector('.desc');
 var temp = document.querySelector('.temp');
 
 button.addEventListener('click', function (){
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + input.value + '&appid=987c73bd1a5fdefe46a4172c1fe33bcf' + '&units=imperial')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputValue.value + '&appid=987c73bd1a5fdefe46a4172c1fe33bcf' + '&units=imperial')
     .then(response => response.json())
     .then(data => {
         var nameValue = data['name'];
         var tempValue = data['main']['temp'];
         var descValue = data['weather'][0]['description'];
 
-        name.innerHtml = nameValue;
+        name.innerHTML = nameValue;
         temp.innerHTML = tempValue;
         desc.innerHTML = descValue;
     })
+
 .catch(err => alert("Wrong Ciry Name!"))
 })
