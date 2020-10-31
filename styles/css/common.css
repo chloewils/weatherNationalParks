@@ -71,12 +71,6 @@ img {
     border-color: ivory;
 }
 
-#copyright {
-    height: 75px;
-    text-align: justify;
-    vertical-align: middle;
-}
-
 body {
     background-repeat: no-repeat;
     background-position: center;
@@ -89,4 +83,10 @@ body {
     margin-right: auto ;
     }
 
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+}
     /* plan html page */

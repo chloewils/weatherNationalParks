@@ -23,3 +23,10 @@ h5 {
 p {
     color: #ffffff;
 }
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+}
