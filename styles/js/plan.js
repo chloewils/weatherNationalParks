@@ -59,11 +59,7 @@ function nationalParkFunction(searchTerm) {
         console.log('res', response)
 
         /*
-        if (history.indexOf(searchTerm) === -1) {
-            history.push(searchTerm);
-            localStorage.setItem("history", JSON.stringify(history));
-            createRow(searchTerm);
-            console.log(error);
+        
         }
         */
 
