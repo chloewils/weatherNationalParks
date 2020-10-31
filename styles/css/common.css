@@ -1,5 +1,6 @@
 img {
     width: 200px;
+
 }
 
 #row-1 {
@@ -23,8 +24,8 @@ img {
 }
 
 #trip {
-    margin-right: 300px;
-    margin-left: 100px;
+    /* margin-right: 300px;
+    margin-left: 100px; */
     border: solid;
     align-items: stretch;
     background-color: #4a5a49;
@@ -39,16 +40,16 @@ img {
 }
 
 #campsite {
-    margin-left: 100px;
-    margin-right: 100px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
     border: solid;
     background-color: #4a5a49;
     border-color: ivory;
 }
 
 #prep {
-    margin-left: 100px;
-    margin-right: 150px;
+    /* margin-left: 100px;
+    margin-right: 150px; */
     border: solid;
     background-color: #4a5a49;
     border-color: ivory;
@@ -65,9 +66,9 @@ img {
 }
 
 #cubs {
-    border-style: solid;
+    /* border-style: solid;
     padding: 20px;
-    background-color: #4a5a49;
+    background-color: #4a5a49; */
     border-color: ivory;
 }
 
@@ -78,7 +79,7 @@ body {
 } 
 
 .post {
-    width: 820px;
+    width: auto;
     margin-left: auto ;
     margin-right: auto ;
     }

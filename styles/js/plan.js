@@ -32,7 +32,7 @@ $('#states').change(function () {
 });
 
 function nationalParkFunction(searchTerm) {
-
+$("#stateParks").text("");
     $.ajax({
         url: "https://developer.nps.gov/api/v1/parks?q=" +searchTerm + "&api_key=Y0GGEH0NGqggHl4Eyf678f5geglMnqBzFvfV31k7",
         method: "GET",
@@ -44,14 +44,24 @@ function nationalParkFunction(searchTerm) {
 
 // add the cards and then add the parks
         for(var i = 0; i < response.data.length; i++) {
-
+        
             console.log(response.data[i])
+    var a=$("<a>");
+    var div = $("<div>");
             var currentPark = response.data[i]
 
             var parkName = currentPark.fullName
             var url = currentPark.url
 
-           $("body").append("<div><a href='" + url + "'>" + parkName + "</a></div>")
+        a.text(parkName);
+        a.attr("target","_blank");
+        a.attr("href",url);
+
+        div.append(a);
+
+        $("#stateParks").append(div);
+
+    // $("body").append("<div><a href='" + url + "'>" + parkName + "</a></div>")
 
         }
 
